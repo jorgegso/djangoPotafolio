@@ -1,0 +1,62 @@
+{% extends 'layout.html' %} {% block content %} {% load static %}
+<header class="row bg-blac">
+  <div class="col-md-4">
+    <img src="{% static 'porfolio/mi_icon.jpg' %}" class="img-fluid" />
+  </div>
+
+  <div class="col-md-8 my-auto">
+    <h1>I am <strong>Ryan Ray</strong></h1>
+    <h3>I am a Python FullStack Developer</h3>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur
+      deserunt, fugiat id dolore, tempore sed vitae aliquam earum nobis quaerat
+      tenetur explicabo alias similique error repellendus facilis. Voluptate,
+      eveniet. Iure temporibus accusamus voluptate architecto enim sunt deleniti
+      consectetur porro, ea repudiandae ex qui beatae magni ullam voluptatem
+      quaerat repellat cumque animi vitae ab, nemo quia eaque cupiditate at.
+      Provident ipsa velit beatae ipsum quaerat earum laboriosam non ea aperiam?
+      Culpa ipsum omnis illum illo? Modi est saepe quas quaerat maxime alias
+      possimus eaque aliquam blanditiis voluptates suscipit dolore doloremque,
+      vitae reprehenderit praesentium repudiandae reiciendis cumque incidunt
+      ipsam voluptatem. Similique, consequatur.
+    </p>
+    <a
+      href="{% static 'porfolio/resumen.pdf' %}"
+      class="btn btn-primary btn-lg round-0 my-3"
+    >
+      download CV
+    </a>
+  </div>
+</header>
+
+<div class="row my-4 text-center">
+  <h3>My Projects</h3>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, pariatur.
+  </p>
+
+  {% for project in projects %}
+  <div class="com-md-4 p-4">
+    <div class="card bg-black card-project">
+      <div class="card-body">
+        <h2>{{ projects.title }}</h2>
+        <p>{{project.description}}</p>
+        <img
+          src="{{project.image.url}}"
+          alt="{{projects.title}}"
+          class="card-img-top"
+        />
+
+        {% if project.url %}
+        <a
+          href="{{project.url}}"
+          class="btn btn-light rounded-0 btn-sm"
+          target="_blanck"
+          >{{project.url}}</a
+        >
+        {% endif %}
+      </div>
+    </div>
+  </div>
+  {% endfor %} {% endblock content %}
+</div>
