@@ -1,6 +1,6 @@
 # Portafolio web Developer 
 
-A portfolio is a collection of documents of student work that showcases their effort, progress, accomplishments and this is mine I am improving as time goes by. thanks for watching and you can contact me for anything.
+A portfolio is a collection of documents of student work that showcases their effort, progress, accomplishments and this is mine I am improving as time goes by. thanks for watching and you can contact me for anything. Developed completely in Django which helped me a lot to acquire various skills in contrition of sites with Django
 
 ##How to run the app.
 1. Go to the link [in my web](https://portafolio-aaa.herokuapp.com/).
