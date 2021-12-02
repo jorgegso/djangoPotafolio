@@ -1,15 +1,17 @@
 {% load static %}
 <ul class="nav justify-content-center bg-black ms-auto">
   <li class="nav-item">
-    <a class="nav-link fw-boldi fst-italico" href="/">RR</a>
+    <a class="nav-link fw-boldi fst-italico" href="/">Presentation</a>
   </li>
   <li class="nav-item">
     <a class="nav-link" href="{% url 'blog:posts' %}">Blog</a>
   </li>
   <li class="nav-item d-flex align-items-center">
-    <a class="nav-link btm-primary btn-sm bg-gray" href="{% static 'porfolio/resumen.pdf' %}" target="_blac">Download CV</a>
+    <a
+      class="nav-link btm-primary btn-sm bg-gray"
+      href="{% static 'porfolio/resumen.pdf' %}"
+      target="_blac"
+      >Download CV</a
+    >
   </li>
 </ul>
-
-
-

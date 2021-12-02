@@ -10,3 +10,11 @@ body {
   border: 1px solid #000;
   cursor: pointer;
 }
+
+.collll {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

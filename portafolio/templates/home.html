@@ -1,24 +1,20 @@
 {% extends 'layout.html' %} {% block content %} {% load static %}
 <header class="row bg-blac">
   <div class="col-md-4">
-    <img src="{% static 'porfolio/mi_icon.jpg' %}" class="img-fluid" />
+    <img
+      src="{% static 'porfolio/mi_icon1.png' %}"
+      class="img-fluid rounded mx-auto d-block img-thumbnail col"
+    />
   </div>
 
   <div class="col-md-8 my-auto">
-    <h1>I am <strong>Ryan Ray</strong></h1>
+    <h1>I am <strong>Jorge Sosa</strong></h1>
     <h3>I am a Python FullStack Developer</h3>
     <p>
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur
-      deserunt, fugiat id dolore, tempore sed vitae aliquam earum nobis quaerat
-      tenetur explicabo alias similique error repellendus facilis. Voluptate,
-      eveniet. Iure temporibus accusamus voluptate architecto enim sunt deleniti
-      consectetur porro, ea repudiandae ex qui beatae magni ullam voluptatem
-      quaerat repellat cumque animi vitae ab, nemo quia eaque cupiditate at.
-      Provident ipsa velit beatae ipsum quaerat earum laboriosam non ea aperiam?
-      Culpa ipsum omnis illum illo? Modi est saepe quas quaerat maxime alias
-      possimus eaque aliquam blanditiis voluptates suscipit dolore doloremque,
-      vitae reprehenderit praesentium repudiandae reiciendis cumque incidunt
-      ipsam voluptatem. Similique, consequatur.
+      Please accept this words as an expression of my interest. I am a highly
+      motivated and progress-focused programmer with a long-standing freelance.
+      With a track record of initiative and dependability, I have devised
+      strategic initiatives which I believe will prove valuable to your company.
     </p>
     <a
       href="{% static 'porfolio/resumen.pdf' %}"
@@ -30,9 +26,10 @@
 </header>
 
 <div class="row my-4 text-center">
-  <h3>My Projects</h3>
+  <h3>Projects</h3>
   <p>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, pariatur.
+    Projects that I have done to show my will to improve as an autonomous and as
+    a professionals.
   </p>
 
   {% for project in projects %}
